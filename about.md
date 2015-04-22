@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi there!! I am Sumit Joshi, I am currently doing my Masters Degree in IT Systems and Network Security at GTU PG School.
 
-### More Information
+Technology fascinates me and i like trying out newer technology and applications.
 
-A place to include any other types of information that you'd like to include about yourself.
+`#tech #linux #networking #Cloud #Virtualization #Openstack`
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Drop me a line at: sumitjoshi024 [at] gmail [dot] com
+
+Download my [public GPG key](/asset) to encrypt email you send me if you like.
