@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi there!! I am Sumit Joshi, I am currently doing my Masters Degree in IT Systems and Network Security at GTU PG School.
+Hi there!! I am Sumit Joshi, I am pursuing my M.Tech in stream of IT Systems and Network Security from GTU PG School,Gandhinagar with aggregate 8.3 GPA.
 
 Technology fascinates me and i like trying out newer technology and applications.
 
