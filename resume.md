@@ -4,7 +4,6 @@ title: Resume
 permalink: /resume/
 ---
 
-#Resume
 
 ##Aspiration
 
