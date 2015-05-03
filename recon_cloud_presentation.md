@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: presentation
 title: Reconfig Cloud Presentation
 permalink: /recon
 ---
