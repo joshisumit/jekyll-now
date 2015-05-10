@@ -11,30 +11,33 @@ If you want to know [Why LXC for running HPC](/why_lxc_for_hpc)
 ##Prerequisites
 In this tutorial, we will be using lxc for running containers and libvirt API(virsh) for managing those containers.
 Install them with:
+
 `apt-get install lxc`
 
 `apt-get install libvirt-bin`
 
+##Filesystems for master and compute node
 
+As mentioned in my previous blog [Build HPC cluster from scratch with LXC](/Build HPC cluster from scratch with LXC) ,I have created HPC Cluster with LXC manually. Just download those Ready-made filesystems for [master node](/mpi-master-fs) and [compute node](/mpi-compute-fs).Copy these filesystems in `/var/cache/lxc` in your Ubuntu.
 
-As mentioned in my previous blog [Build HPC cluster from scratch with LXC](/Build HPC cluster from scratch with LXC) ,first i have created HPC Cluster with LXC manually. Just download those Ready-made filesystems for [master node](/mpi-master-fs) and [compute node](/mpi-compute-fs).
-
-Copy these filesystems in `/var/cache/lxc` in your Ubuntu.
 `cp ~/mpi-master-fs /var/cache/lxc`
+
+Pre-configured master node filesystem has:
+
+- `cluster` user: to operate our cluster.
+- NFS Server: to share cluster user's home directory with all compute nodes.
+If you do `cat /etc/exports` it will look like this:
+
+`/home/cluster *(rw,sync,no_subtree_check)`
+- Passwordless SSH: cluster user will do password less SSH login in all compute node.
+- MPI (`mpich2`): Cluster will communicate with MPI.
+
+
 
 `cp ~/mpi-compute-fs /var/cache/lxc`
 
+
 Once MPI cluster is installed, Filesystem will be in `/var/lib/lxc/$master_node/rootfs`
-
-On Master Node
-
-
-- NFS Server
-- Passwordless SSH to all compute nodes.
-- MPI installation
-- cluster user for running HPC jobs.
-
-
 
 ##How I created Rapid HPC Cluster with LXC.
 
