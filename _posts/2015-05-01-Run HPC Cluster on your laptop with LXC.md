@@ -20,6 +20,7 @@ Install them with:
 ##What we wiil do ?
 
 We will be creating one control node and then 3 worker nodes to actually do the work.
+Everthing will be installed automatically by script.
 
 - Master Node:
   - Hostname : master
