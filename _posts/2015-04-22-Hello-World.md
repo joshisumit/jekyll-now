@@ -18,7 +18,10 @@ LXC has two core features of Linux:
 - namespaces
 - cgroup
  
-
+Kernel namespaces
+1. pid
+2. network
+3.  hostname
 
 
 For more instructions head over to the [Linux Container Website](http://linuxcontainer.org).
