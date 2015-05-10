@@ -3,9 +3,15 @@ layout: post
 title: How I created HPC Cluster with LXC on my laptop
 ---
 
-##Create HPC Cluster
+###HPC Cluster Components
+
+
+On Master Node:
+-
 
 How I created HPC Cluster with LXC.
+
+We will be creating one control node and then 3 worker nodes to actually do the work.
 
 Base OS: Ubuntu 12.04
 
