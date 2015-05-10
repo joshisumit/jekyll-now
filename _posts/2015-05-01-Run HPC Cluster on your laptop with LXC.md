@@ -9,6 +9,8 @@ HPC Cluster Components
 
 On Master Node
 
+
+
 - NFS Server
 - Passwordless SSH to all compute nodes.
 - MPI installation
@@ -39,9 +41,6 @@ LXC Template
 
 
 FS path = /var/lib/lxc/$master_node/rootfs
-
-
-
 
 
 
