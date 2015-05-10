@@ -14,4 +14,11 @@ With libvirt u can directly deal with containers by running following command:
 
 `virsh -c lxc:/// start demo`
 
+LXC has two core features of Linux:
+- namespaces
+- cgroup
+ 
+
+
+
 For more instructions head over to the [Linux Container Website](http://linuxcontainer.org).
