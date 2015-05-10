@@ -2,7 +2,14 @@
 layout: post
 title: How I created HPC Cluster with LXC on my laptop
 ---
+
+
+
 HPC Cluster Components
+
+- No problems exist
+- You made it all up
+
 
 
 On Master Node
