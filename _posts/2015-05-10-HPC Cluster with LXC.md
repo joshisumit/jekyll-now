@@ -4,11 +4,8 @@ title: HPC Cluster with LXC
 ---
 
 On Master Node: 
-* NFS Server 
-* Passwordless SSH to all compute nodes
-
-
-
+- NFS Server 
+- Passwordless SSH to all compute nodes
 
 How I created HPC Cluster with LXC.
 
