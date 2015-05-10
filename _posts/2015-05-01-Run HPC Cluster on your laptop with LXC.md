@@ -2,12 +2,12 @@
 layout: post
 title: How I created HPC Cluster with LXC on my laptop
 ---
-
 ###HPC Cluster Components
 
 
 On Master Node:
--
+* NFS Server
+* Passwordless SSH to all compute nodes
 
 How I created HPC Cluster with LXC.
 
