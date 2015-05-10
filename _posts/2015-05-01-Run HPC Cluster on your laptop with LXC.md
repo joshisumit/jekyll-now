@@ -3,7 +3,7 @@ layout: post
 title: How I created HPC Cluster with LXC on my laptop
 ---
 
-
+This provides mechanisms to control the complexity of the cluster installation and expansion process.(Simliar to rocks cluster)
 
 ##How we are creating typical HPC Cluster ?
 
@@ -44,10 +44,10 @@ We will be creating one control node and then 3 worker nodes to actually do the 
 
 Base OS: Ubuntu 12.04
 
-Filesystem of
+Filesystem (Initially created in /var/cache/lxc and then copied to /var/lib/lxc/)
 
-- master node
-- compute node
+- master node (/var/cache/lxc/mpi-master/rootfs)
+- compute node (/var/cache/lxc/mpi-worker/rootfs)
 
 
 
