@@ -3,7 +3,9 @@ layout: post
 title: How I created HPC Cluster with LXC on my laptop
 ---
 
-This provides mechanisms to control the complexity of the cluster installation and expansion process.(Simliar to rocks cluster)
+In this post I will talk about, creating ready-made MPI Cluster on Linux Container.This solution allows simple and rapid cluster deployment and management.It allows the cluster administrator to focus on the core cluster task.It removes the complexity of the cluster installation and expansion process.
+
+
 
 ##How we are creating typical HPC Cluster ?
 
