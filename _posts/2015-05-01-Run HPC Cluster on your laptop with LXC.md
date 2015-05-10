@@ -5,7 +5,7 @@ title: How I created HPC Cluster with LXC on my laptop
 
 
 
-How we are creating typical HPC Cluster ?
+##How we are creating typical HPC Cluster ?
 
 On Master Node
 
@@ -17,33 +17,29 @@ On Master Node
 
 
 
-How I created HPC Cluster with LXC.
+##How I created HPC Cluster with LXC.
 
 We will be creating one control node and then 3 worker nodes to actually do the work.
 
-Master Node:
-
-- Hostname : master
-- IP : 10.0.0.1
-
+- Master Node:
+  - Hostname : master
+  - IP : 10.0.0.1
 
 
-Compute Node 1:
 
-- Hostname : compute1
-- IP : 10.0.0.10
-
-
-Compute Node 2:
-
-- Hostname : compute2
-- IP : 10.0.0.11
+- Compute Node 1:
+  - Hostname : compute1
+  - IP : 10.0.0.10
 
 
-Compute Node 3:
+- Compute Node 2:
+  - Hostname : compute2
+  - IP : 10.0.0.11
 
-- Hostname : compute3
-- IP : 10.0.0.12
+
+- Compute Node 3:
+  - Hostname : compute3
+  - IP : 10.0.0.12
 
 
 Base OS: Ubuntu 12.04
