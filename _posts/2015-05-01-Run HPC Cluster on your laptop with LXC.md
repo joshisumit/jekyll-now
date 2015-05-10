@@ -2,12 +2,15 @@
 layout: post
 title: How I created HPC Cluster with LXC on my laptop
 ---
-###HPC Cluster Components
+HPC Cluster Components
 
 
-On Master Node:
-* NFS Server
-* Passwordless SSH to all compute nodes
+On Master Node
+- NFS Server
+- Passwordless SSH to all compute nodes.
+- MPI installation
+
+
 
 How I created HPC Cluster with LXC.
 
@@ -19,9 +22,16 @@ Filesystem of
 - master node
 - compute node
 
+
+
+
+
 LXC Template
 - master node (mpi-master)-(stored in /usr/lib/lxc/templates)
 - compute node (mpi-worker)
+- some other one
+
+
 
 FS path = /var/lib/lxc/$master_node/rootfs
 
