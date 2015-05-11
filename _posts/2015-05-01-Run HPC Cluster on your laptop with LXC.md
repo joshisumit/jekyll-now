@@ -108,6 +108,11 @@ Now we will manage our container with virsh. In libvirt, every VM's configuratio
 
 `ip=$(tail -n15 $path/var/lib/dhcp/dhclient.eth0.leases | grep fixed-address | cut -d" " -f4 | cut -d";" -f1)`
 
+
+
+
+`sed -i "s/master/$master_name/" $path/etc/fstab`
+
 ##Summary
 
 If you are working with HPC, having a full blown HPC Cluster on your laptop is awesome :)
