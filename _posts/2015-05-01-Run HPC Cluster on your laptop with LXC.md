@@ -78,11 +78,11 @@ Once MPI cluster is installed, Filesystem will be in `/var/lib/lxc/$master_node/
 
 ##LXC Template for master and compute node
 
-Typically, all LXC templates are stored in /usr/lib/lxc/templates.I have modified basic ubuntu template for creating two different templates.[master node template](/mpi-master-template) [compute node template](mpi-worker-template).
+Typically, all LXC templates are stored in /usr/lib/lxc/templates.I have modified basic ubuntu template for creating two different templates. Just download [master node template](/mpi-master-template) and [compute node template](mpi-worker-template).
 
-when we create containers with lxc-create we are specifying template that we want to use and container name like:
+When we create containers with lxc-create, we are specifying template name and container name like:
 
-`lxc-create -t ubunut -n demo`
+`lxc-create -t ubuntu -n demo`
 
 Same here for creating master node container `mpi-master` will be used:
 
@@ -92,3 +92,22 @@ For creating compute-node container `mpi-worker` will be used:
 
 `lxc-create -t mpi-worker -n compute1`
 
+Now, filesystem of master and compute node is created in `/var/lib/lxc`.
+
+##virsh
+
+Now we will manage our container with virsh. In libvirt, every VM's configuration is defined in xml file. Download this sample [`base.xml`](/base_xml) file.
+
+
+
+`virsh -c lxc:/// define $master_name.xml`
+
+`virsh -c lxc:/// start $master_name`
+
+`virsh -c lxc:/// list --all`
+
+`ip=$(tail -n15 $path/var/lib/dhcp/dhclient.eth0.leases | grep fixed-address | cut -d" " -f4 | cut -d";" -f1)`
+
+##Summary
+
+If you are working with HPC, having a full blown HPC Cluster on your laptop is awesome :)
