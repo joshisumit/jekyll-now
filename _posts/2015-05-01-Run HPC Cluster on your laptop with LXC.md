@@ -10,6 +10,7 @@ This script is useful for basic development and testing – if all you want is t
 some HPC code than you can check it by running this script which rapidly deploys HPC Cluster.
 Virtual HPC cluster is deployed with Linux Container(LXC) and libvirt.
 
+`Quickly Run HPC cluster with LXC on your laptop`
 
 Note:
 If you want to know [Why LXC for running HPC](/why_lxc_for_hpc) 
@@ -77,5 +78,17 @@ Once MPI cluster is installed, Filesystem will be in `/var/lib/lxc/$master_node/
 
 ##LXC Template for master and compute node
 
-- master node (mpi-master)-(stored in /usr/lib/lxc/templates)
-- compute node (mpi-worker)
+Typically, all LXC templates are stored in /usr/lib/lxc/templates.I have modified basic ubuntu template for creating two different templates.[master node template](/mpi-master-template) [compute node template](mpi-worker-template).
+
+when we create containers with lxc-create we are specifying template that we want to use and container name like:
+
+`lxc-create -t ubunut -n demo`
+
+Same here for creating master node container `mpi-master` will be used:
+
+`lxc-create -t mpi-master -n master`
+
+For creating compute-node container `mpi-worker` will be used:
+
+`lxc-create -t mpi-worker -n compute1`
+
