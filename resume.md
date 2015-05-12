@@ -47,6 +47,10 @@ well.
 
 A simple backup utility which works in LAN.
 
+###3) Openstack for laboratory environment
+
+###4) IP Tracking & Scanning
+
 ##Presentations
 [Reconfigurable Cloud](http://slides.com/sumitjoshi/deck-2/#/)
 
