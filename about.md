@@ -14,4 +14,4 @@ Technology fascinates me and i like trying out newer technology and applications
 
 Drop me a line at: sumitjoshi024 [at] gmail [dot] com
 
-Download my [public GPG key](/asset) to encrypt email you send me if you like.
+Download my [public GPG key](/assets/public.asc) to encrypt email you send me if you like.
