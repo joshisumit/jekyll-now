@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Create HPC Cluster with LXC
+title : Build HPC cluster from scratch with LXC
 ---
 
 Build HPC cluster from scratch with LXC.
