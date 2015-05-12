@@ -113,6 +113,18 @@ Now we will manage our container with virsh. In libvirt, every VM's configuratio
 
 `sed -i "s/master/$master_name/" $path/etc/fstab`
 
+##Script
+
+    path=/var/lib/lxc/$master_name/rootfs
+    lxc-create -t mpi-master -n $master_name
+    #preapre xml of container($3)
+    cp base.xml $master_name.xml
+    sed -i "s/NAME/$master_name/" $master_name.xml
+    sed -i "s<ROOT<$path<" $master_name.xml
+
+
+
+
 ##Summary
 
 If you are working with HPC, having a full blown HPC Cluster on your laptop is awesome :)
