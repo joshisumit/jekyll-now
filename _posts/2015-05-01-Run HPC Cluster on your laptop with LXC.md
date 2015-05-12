@@ -5,8 +5,11 @@ title: How I created HPC Cluster with LXC on my laptop
 
 In this post I will talk about, rapid deployment of MPI Cluster on Linux Container in Ubuntu 12.04. It allows the cluster administrator to focus on the core cluster tasks,rather than spending time on installing linux cluster. It removes the complexity of the cluster installation and expansion process.
 
-Download the script by
+Download the script by running:
 
+    git clone https://github.com/joshisumit/HPC-lxc-laptop.git
+
+Download required things from [here](https://drive.google.com/folderview?id=0B6LOfkglrOq9fnJ3dkpINUFOaTYySVRHOHhYMUFBcDVfcHlWMWZiUzRBbVh3ZkVtU3VmUzA&usp=sharing) .
     
     
     
@@ -24,9 +27,8 @@ If you want to know [Why LXC for running HPC](/why_lxc_for_hpc)
 In this tutorial, we will be using LXC for creating filesystem of container and libvirt API(virsh) for managing those containers.
 Install them with:
 
-`apt-get install lxc`
-
-`apt-get install libvirt-bin`
+    apt-get install lxc
+    apt-get install libvirt-bin
 
 ##What we wiil do ?
 
