@@ -3,7 +3,7 @@ layout: post
 title: How I rapidly deployed HPC Cluster with LXC on my laptop
 ---
 
-Quickly Run virtualized HPC cluster with LXC on your laptop
+Quickly Deploy/Run virtualized HPC cluster with LXC on your laptop
 
 Creating a virtualized HPC cluster using Linux Containers
 
@@ -20,8 +20,6 @@ Download the script by running:
     git clone https://github.com/joshisumit/HPC-lxc-laptop.git
 
 Download required things from [here](https://drive.google.com/folderview?id=0B6LOfkglrOq9fnJ3dkpINUFOaTYySVRHOHhYMUFBcDVfcHlWMWZiUzRBbVh3ZkVtU3VmUzA&usp=sharing) .
-    
-    
     
 
 This script is useful for basic development and testing – if all you want is to test 
