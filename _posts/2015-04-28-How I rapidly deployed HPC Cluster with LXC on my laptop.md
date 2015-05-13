@@ -1,18 +1,7 @@
 ---
 layout: post
-title: How I rapidly deployed HPC Cluster with LXC on my laptop
+title: Quickly Deploy/Run virtualized HPC cluster with LXC on your laptop
 ---
-
-Quickly Deploy/Run virtualized HPC cluster with LXC on your laptop
-
-Creating a virtualized HPC cluster using Linux Containers
-
-##Why and how I created a working HPC Cluster on my laptop
-
-##What this post is about?
-##What you are going to do?
-##What users have to do?
-##Explain script components
 
 Hello folks,
 
@@ -20,13 +9,6 @@ In this post I will talk about rapid deployment of HPC Cluster in Ubuntu 12.04.
 I have written shell script, that will let you turn your laptop into a virtual three-node HPC cluster that can be used to develop and run HPC applications, including MPI apps. 
 
 This script is useful for basic development and testing – if all you want is to test some HPC code than you can check it by running this script which rapidly deploys HPC Cluster.Virtual HPC cluster is deployed with Linux Container(LXC) and libvirt.
-
-
-I have created pre-configured containers that includes all the components you need:
-
-
-##What is LXC?
-
 
 ##Prerequisites
 In this tutorial, we will be using LXC for creating filesystem of container and libvirt API(virsh) for managing those containers.Before running a script install them with:
@@ -41,7 +23,7 @@ Everthing will be installed automatically by script.
 
 - Master Node:
   - Hostname : master
-  - IP : 192.168.122.151 (IP can change, given by dnsmasq service)
+  - IP : 192.168.122.151 (IP may vary in your case, given by dnsmasq service)
 
 - Compute Node 1:
   - Hostname : compute1
@@ -61,11 +43,31 @@ Download the script by running:
 
     git clone https://github.com/joshisumit/HPC-lxc-laptop.git
 
-Download required stuff from [here](https://drive.google.com/folderview?id=0B6LOfkglrOq9fnJ3dkpINUFOaTYySVRHOHhYMUFBcDVfcHlWMWZiUzRBbVh3ZkVtU3VmUzA&usp=sharing) .
+This script requires following 5 components :
+
+1. base.xml file
+2. Master node filesystem(hpc_master_fs.tar.bz2 file)
+3. Compute node filesystem(hpc_worker_fs.tar.bz2 file)
+4. LXC template for master node(lxc-mpi-master file)
+5. LXC template for compute node(lxc-mpi-worker file)
+
+Download the above stuff from [here](https://drive.google.com/folderview?id=0B6LOfkglrOq9fnJ3dkpINUFOaTYySVRHOHhYMUFBcDVfcHlWMWZiUzRBbVh3ZkVtU3VmUzA&usp=sharing) .
+
+Now extract the master and compue node filesystem:
+
+    tar -xvjf hpc_master_fs.tar.bz2 -C /var/cache/lxc
+    tar -xvjf hpc_worker_fs.tar.bz2 -C /var/cache/lxc
     
+Copy LXC templates in `/usr/lib/lxc/templates` :
+    
+    cp lxc-mpi-master /usr/lib/lxc/templates
+    cp lxc-mpi-worker /usr/lib/lxc/templates
+    
+Once everything is settled up,run the script:
 
-
-
+    ./create-hpc-with-lxc-on-laptop.sh
+    
+    
 ##Filesystems for master and compute node
 
 As mentioned in my previous blog [Build HPC cluster from scratch with LXC](/Build HPC cluster from scratch with LXC) ,I have created HPC Cluster with LXC manually. Just download those Ready-made filesystems for [master node](/mpi-master-fs) and [compute node](/mpi-compute-fs). Extract both of them in `/var/cache/lxc`.
