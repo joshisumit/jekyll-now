@@ -9,31 +9,27 @@ Creating a virtualized HPC cluster using Linux Containers
 
 ##Why and how I created a working HPC Cluster on my laptop
 
-Shell script that will let you turn your laptop into a virtual cluster using LXC and libvirt.
+##What this post is about?
+##What you are going to do?
+##What users have to do?
+##Explain script components
 
-With one free download, you can now turn your laptop into a virtual three-node HPC cluster that can be used to develop and run HPC applications, including MPI apps. We’ve created a pre-configured virtual machine that includes all the components you need:
+Hello folks,
 
-In this post I will talk about, rapid deployment of MPI Cluster on Linux Container in Ubuntu 12.04. It allows the cluster administrator to focus on the core cluster tasks,rather than spending time on installing linux cluster. It removes the complexity of the cluster installation and expansion process.
+In this post I will talk about rapid deployment of HPC Cluster in Ubuntu 12.04.
+I have written shell script, that will let you turn your laptop into a virtual three-node HPC cluster that can be used to develop and run HPC applications, including MPI apps. 
 
-Download the script by running:
+This script is useful for basic development and testing – if all you want is to test some HPC code than you can check it by running this script which rapidly deploys HPC Cluster.Virtual HPC cluster is deployed with Linux Container(LXC) and libvirt.
 
-    git clone https://github.com/joshisumit/HPC-lxc-laptop.git
 
-Download required things from [here](https://drive.google.com/folderview?id=0B6LOfkglrOq9fnJ3dkpINUFOaTYySVRHOHhYMUFBcDVfcHlWMWZiUzRBbVh3ZkVtU3VmUzA&usp=sharing) .
-    
+I have created pre-configured containers that includes all the components you need:
 
-This script is useful for basic development and testing – if all you want is to test 
-some HPC code than you can check it by running this script which rapidly deploys HPC Cluster.
-Virtual HPC cluster is deployed with Linux Container(LXC) and libvirt.
 
-`Quickly Run HPC cluster with LXC on your laptop`
+##What is LXC?
 
-Note:
-If you want to know [Why LXC for running HPC](/why_lxc_for_hpc) 
 
 ##Prerequisites
-In this tutorial, we will be using LXC for creating filesystem of container and libvirt API(virsh) for managing those containers.
-Install them with:
+In this tutorial, we will be using LXC for creating filesystem of container and libvirt API(virsh) for managing those containers.Before running a script install them with:
 
     apt-get install lxc
     apt-get install libvirt-bin
@@ -45,19 +41,29 @@ Everthing will be installed automatically by script.
 
 - Master Node:
   - Hostname : master
-  - IP : 10.0.0.1
+  - IP : 192.168.122.151 (IP can change, given by dnsmasq service)
 
 - Compute Node 1:
   - Hostname : compute1
-  - IP : 10.0.0.10
+  - IP : 192.168.122.152
 
 - Compute Node 2:
   - Hostname : compute2
-  - IP : 10.0.0.11
+  - IP : 192.168.122.153
 
 - Compute Node 3:
   - Hostname : compute3
-  - IP : 10.0.0.12
+  - IP : 192.168.122.154
+
+##So, How to set it up?
+
+Download the script by running:
+
+    git clone https://github.com/joshisumit/HPC-lxc-laptop.git
+
+Download required stuff from [here](https://drive.google.com/folderview?id=0B6LOfkglrOq9fnJ3dkpINUFOaTYySVRHOHhYMUFBcDVfcHlWMWZiUzRBbVh3ZkVtU3VmUzA&usp=sharing) .
+    
+
 
 
 ##Filesystems for master and compute node
