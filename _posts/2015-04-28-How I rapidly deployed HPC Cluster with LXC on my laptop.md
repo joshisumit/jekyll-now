@@ -67,85 +67,53 @@ Once everything is settled up,run the script:
 
     ./create-hpc-with-lxc-on-laptop.sh
     
+Script will take some time to install master and compute node.
+
+
+##Verify your HPC Cluster
+
+
+    virsh -c lxc:/// list
     
-##Filesystems for master and compute node
+You will get following output:
 
-As mentioned in my previous blog [Build HPC cluster from scratch with LXC](/Build HPC cluster from scratch with LXC) ,I have created HPC Cluster with LXC manually. Just download those Ready-made filesystems for [master node](/mpi-master-fs) and [compute node](/mpi-compute-fs). Extract both of them in `/var/cache/lxc`.
+    Id    Name                           State
+    ----------------------------------------------------
+    5164  master                         running
+    5166  compute-1                      running
+    5169  compute-2                      running
+    5199  compute-3                      running
+ 
+ 
+###Verify Master container  
+Login to your master node container with username 'ubuntu' and password 'ubuntu' :
 
-Just check by typing:
+    virsh -c lxc:/// console master
 
-`ls /var/cache/lxc` 
+After logging in, Check following things in your master container:
 
-Master node filesystem path is `/var/cache/lxc/mpi-master/rootfs`
+1. `cluster` user: to operate our cluster.
+2. NFS Server: to share cluster user's home directory with all compute nodes.Just check it by doing:
 
-Compute node filesystem path `/var/cache/lxc/mpi-worker/rootfs`
+        cat /etc/exports
 
-Pre-configured master node filesystem has:
-
-- `cluster` user: to operate our cluster.
-- NFS Server: to share cluster user's home directory with all compute nodes.
-Just check it by doing:
-
-`cat /var/cache/lxc/mpi-master/rootfs/etc/exports` 
-
-it will look like this:
-
-`/home/cluster *(rw,sync,no_subtree_check)`
-
-- Passwordless SSH: cluster user will do password less SSH login in all compute node.
-- MPI (`mpich2`): Cluster will communicate with MPI.
-
-
-Once MPI cluster is installed, Filesystem will be in `/var/lib/lxc/$master_node/rootfs`
+        /home/cluster *(rw,sync,no_subtree_check)
+3. `/etc/hosts` file: entry for all compute nodes.
+4. Passwordless SSH: cluster user will do password less SSH login in all compute node.
+5. MPI (`mpich2`):MPI is installed, cluster will communicate with MPI.
 
 
-##LXC Template for master and compute node
+###Verify compute container 
+Login to your compute-1 node container with username 'ubuntu' and password 'ubuntu' :
 
-Typically, all LXC templates are stored in /usr/lib/lxc/templates.I have modified basic ubuntu template for creating two different templates. Just download [master node template](/mpi-master-template) and [compute node template](mpi-worker-template).
+    virsh -c lxc:/// console compute-1
 
-When we create containers with lxc-create, we are specifying template name and container name like:
+After logging in, Check following things in your compute-1 container:
 
-`lxc-create -t ubuntu -n demo`
-
-Same here for creating master node container `mpi-master` will be used:
-
-`lxc-create -t mpi-master -n master`
-
-For creating compute-node container `mpi-worker` will be used:
-
-`lxc-create -t mpi-worker -n compute1`
-
-Now, filesystem of master and compute node is created in `/var/lib/lxc`.
-
-##virsh
-
-Now we will manage our container with virsh. In libvirt, every VM's configuration is defined in xml file. Download this sample [`base.xml`](/base_xml) file.
-
-
-
-`virsh -c lxc:/// define $master_name.xml`
-
-`virsh -c lxc:/// start $master_name`
-
-`virsh -c lxc:/// list --all`
-
-`ip=$(tail -n15 $path/var/lib/dhcp/dhclient.eth0.leases | grep fixed-address | cut -d" " -f4 | cut -d";" -f1)`
-
-
-
-
-`sed -i "s/master/$master_name/" $path/etc/fstab`
-
-##Script
-
-    path=/var/lib/lxc/$master_name/rootfs
-    lxc-create -t mpi-master -n $master_name
-    #preapre xml of container($3)
-    cp base.xml $master_name.xml
-    sed -i "s/NAME/$master_name/" $master_name.xml
-    sed -i "s<ROOT<$path<" $master_name.xml
-
-
+1. `/etc/fstab` file:
+2. Verify NFS share(/home/cluster) is properly mounted.If it is not mounted than mount it by running:
+    mount -a
+3. `/etc/hosts` file:
 
 
 ##Summary
