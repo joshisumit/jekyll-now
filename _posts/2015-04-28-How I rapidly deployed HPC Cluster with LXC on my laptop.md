@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quickly Deploy/Run virtualized HPC cluster with LXC on your laptop
+title: Quickly deploy virtualized HPC cluster with LXC on your laptop
 ---
 
 Hello folks,
@@ -96,7 +96,7 @@ After logging in, Check following things in your master container:
 2. NFS Server: to share cluster user's home directory with all compute nodes.Just check it by doing:
 
         cat /etc/exports
-
+        
         /home/cluster *(rw,sync,no_subtree_check)
 3. `/etc/hosts` file: entry for all compute nodes.
 4. Passwordless SSH: cluster user will do password less SSH login in all compute node.
@@ -110,10 +110,10 @@ Login to your compute-1 node container with username 'ubuntu' and password 'ubun
 
 After logging in, Check following things in your compute-1 container:
 
-1. `/etc/fstab` file:
+1. `/etc/fstab` file
 2. Verify NFS share(/home/cluster) is properly mounted.If it is not mounted than mount it by running:
     mount -a
-3. `/etc/hosts` file:
+3. `/etc/hosts` file
 
 ##Summary
 
