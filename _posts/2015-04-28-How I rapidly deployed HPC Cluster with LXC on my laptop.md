@@ -70,7 +70,7 @@ Once everything is settled up,run the script:
 Script will take some time to install master and compute node.
 
 
-##Verify your HPC Cluster
+##Verify your HPC Cluster Installation
 
 
     virsh -c lxc:/// list
@@ -114,7 +114,6 @@ After logging in, Check following things in your compute-1 container:
 2. Verify NFS share(/home/cluster) is properly mounted.If it is not mounted than mount it by running:
     mount -a
 3. `/etc/hosts` file:
-
 
 ##Summary
 
