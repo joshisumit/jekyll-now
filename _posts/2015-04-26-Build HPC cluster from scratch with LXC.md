@@ -21,4 +21,6 @@ var dropdown = new Form.Dropdown(document.getElement('select'));
  
  [[download_button]]
  
+ name = ___
+ 
  
