@@ -24,3 +24,5 @@ var dropdown = new Form.Dropdown(document.getElement('select'));
  name = ___
  
  
+ 
+ name<input type="text" id="name" name="name"/>
