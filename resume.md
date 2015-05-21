@@ -20,6 +20,10 @@ To work in an environment which provides more avenues in the fields of IT Infras
 
 ##Publications
 
+
+`Sumit R. Joshi,  Vineeta Tiwari, Manish Kumar Abhishek, “Reconfigurable Cloud: Consolidating HPC and Commodity Applications in the Cloud”,  Vol. 4-Issue 5(May-2015),  International Journal of Science, Engineering and Technology 
+Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org`
+
 ##Projects
 ###1) Reconfigurable Cloud
 
