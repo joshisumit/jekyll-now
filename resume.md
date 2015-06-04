@@ -20,7 +20,7 @@ To work in an environment which provides more avenues in the fields of IT Infras
 
 ##Publications
 
-**Sumit R. Joshi**,  Vineeta Tiwari, Manish Kumar Abhishek, *“Reconfigurable Cloud: Consolidating HPC and Commodity Applications in the Cloud”*,  Vol. 4-Issue 5(May-2015),  International Journal of Science, Engineering and Technology 
+**Sumit R. Joshi**,  Vineeta Tiwari, Manish Kumar Abhishek, [*“Reconfigurable Cloud: Consolidating HPC and Commodity Applications in the Cloud”*](http://ijsetr.org/wp-content/uploads/2015/05/IJSETR-VOL-4-ISSUE-5-1416-1419.pdf),  Vol. 4-Issue 5(May-2015),  International Journal of Science, Engineering and Technology 
 Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org
 
 ##Projects
@@ -28,7 +28,7 @@ Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org
 
 Platform Used: `Linux, Shell Scripting, LXC, cgroup`
 
-Reconfigurable cloud aims at running Cloud and HPC applications on the same infrastructure in a way that preserves the consolidation capabilities of commodity clouds. It improves HPC application performance by running them in LXC(Linux Containers).Moreover it aims at optimal utilization of IT infrastructure.
+Reconfigurable cloud aims at running Cloud and HPC applications on the same infrastructure in a way that preserves the consolidation capabilities of commodity clouds. It improves HPC application performance by running them in LXC (Linux Containers).Moreover it aims at optimal utilization of IT infrastructure.
 
 
 ###2) Easy Wordpress
