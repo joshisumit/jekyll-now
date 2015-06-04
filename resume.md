@@ -4,6 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
+[Download as PDF]({{ site.url }}/assets/mydoc.pdf)
 
 ##Aspiration
 
