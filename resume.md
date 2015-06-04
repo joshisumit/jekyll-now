@@ -26,28 +26,14 @@ Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org
 ##Projects
 ###1) Reconfigurable Cloud
 
-####Platform Used: `Linux, Shell Scripting, LXC, cgroup`
+Platform Used: `Linux, Shell Scripting, LXC, cgroup`
 
-Cloud computing is emerging as an additional deployment option for some of the HPC 
-applications. But still, it currently does not come without 
-drawbacks for application performance. These performance 
-issues take place due to resource contention, where one VM is 
-able to impact the performance of another. This interference 
-directly creates impact on performance and scalability of HPC 
-application. Additionally, virtualization overhead is also a 
-barrier for adoption of cloud for HPC application. 
+Reconfigurable cloud aims at running Cloud and HPC applications on the same infrastructure in a way that preserves the consolidation capabilities of commodity clouds. It improves HPC application performance by running them in LXC(Linux Containers).Moreover it aims at optimal utilization of IT infrastructure.
 
-Reconfigurable Cloud, is able to accommodate commodity 
-application and HPC application on the same hardware. It 
-solves the above issues by isolating HPC workload from other 
-users and by giving near native performance for running HPC 
-applications. With reconfigurable approach, same web-
-oriented cloud infrastructure can also be reused for HPC as 
-well.
 
 ###2) Easy Wordpress
 
-Platform used: Linux, Shell Script
+Platform used: `Linux, Shell Script`
 
 [Easy Wordpress](https://github.com/joshisumit/easy_wordpress) is a shell script that easily creates wordpress hosting environment. It rapidly installs wordpress on Ubuntu, by eliminating a lot of the up front setup.
 
