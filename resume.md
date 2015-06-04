@@ -46,13 +46,15 @@ oriented cloud infrastructure can also be reused for HPC as
 well.
 
 ###2) Easy Wordpress
-####Platform used: `Linux, Shell Script`
+
+Platform used: Linux, Shell Script
 
 [Easy Wordpress](https://github.com/joshisumit/easy_wordpress) is a shell script that easily creates wordpress hosting environment. It rapidly installs wordpress on Ubuntu, by eliminating a lot of the up front setup.
 
 
 ###3) Rapid HPC
-####Platform used: `Linux, LXC, libvirt, Shell Script`
+
+Platform used: `Linux, LXC, libvirt, Shell Script`
 
 
 [Rapid HPC](https://github.com/joshisumit/rapid-hpc) is a shell script that rapidly creates HPC cluster using LXC on your laptop.
