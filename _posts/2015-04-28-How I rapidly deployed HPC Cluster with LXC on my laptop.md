@@ -41,7 +41,7 @@ Everthing will be installed automatically by script.
 
 Download the script by running:
 
-    git clone https://github.com/joshisumit/HPC-lxc-laptop.git
+    git clone https://github.com/joshisumit/rapid-hpc.git
 
 This script requires following 5 components :
 
