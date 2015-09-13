@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi there!! I am Sumit Joshi, I am pursuing my M.Tech in stream of IT Systems and Network Security from GTU PG School,Gandhinagar with aggregate 8.3 GPA.
+Hi there!! I am Sumit Joshi, I am a Networking QA Engineer working at [Prorigo Software] (prorigosoftware.com).
 
 Technology fascinates me and i like trying out newer technology and applications.
 
