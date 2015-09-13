@@ -12,8 +12,8 @@ To work in an environment which provides more avenues in the fields of IT Infras
 
 ##Education
 
-- Pursuing M.E. in IT Systems and Network Security from Gujarat Technological University. 2013 – 2015
-- First class degree with distinction, B.E. in Computer Engineering from Gujarat Technological University. 2009 – 2013
+- M.E. in IT Systems and Network Security from Gujarat Technological University. 2013 – 2015
+- B.E. in Computer Engineering from Gujarat Technological University. 2009 – 2013
 
 
 ##Skills
@@ -52,6 +52,18 @@ Reconfigurable cloud aims at running Cloud and HPC applications on the same infr
 
 
 [Rapid HPC](https://github.com/joshisumit/rapid-hpc) is a shell script that rapidly creates HPC cluster using LXC on your laptop.
+
+
+
+##Work Experience
+
+### Prorigo Software, September 2015 - Present
+
+Designation - Networking QA Engineer
+
+### C-DAC ACTS, Pune August 2014- May 2015
+
+Designation - Dissertation Intern
 
 
 ##Presentations
