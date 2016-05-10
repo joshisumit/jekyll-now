@@ -6,17 +6,20 @@ permalink: /resume/
 
 
 ## Aspiration
+---
 
 To work in an environment which provides more avenues in the fields of IT Infrastructure, Virtualization and Cloud Computing.
 
 
 ## Education
+---
 
 - M.E. in IT Systems and Network Security from Gujarat Technological University. 2013 – 2015
 - B.E. in Computer Engineering from Gujarat Technological University. 2009 – 2013
 
 
 ## Skills
+---
 
 - Linux: Redhat, Ubuntu
 - Virtualization: KVM, LXC, libvirt API
@@ -26,13 +29,14 @@ To work in an environment which provides more avenues in the fields of IT Infras
 
 
 ## Publications
+---
 
 **Sumit R. Joshi**,  Vineeta Tiwari, Manish Kumar Abhishek, [*“Reconfigurable Cloud: Consolidating HPC and Commodity Applications in the Cloud”*](http://ijsetr.org/wp-content/uploads/2015/05/IJSETR-VOL-4-ISSUE-5-1416-1419.pdf),  Vol. 4-Issue 5(May-2015),  International Journal of Science, Engineering and Technology 
 Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org
 
 
 ## Projects
-----
+---
 
 ### 1) Reconfigurable Cloud
 
@@ -70,4 +74,6 @@ Designation - Dissertation Intern
 
 
 ## Presentations
+---
+
 [Reconfigurable Cloud](http://slides.com/sumitjoshi/deck-2/#/)
