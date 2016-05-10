@@ -12,6 +12,6 @@ Technology fascinates me and i like trying out newer technology and applications
 
 ### Contact me
 
-Drop me a line at: sumitjoshi024 [at] gmail [dot] com
+Drop me a line at: admin [at] sumitjoshi [dot] io
 
 Download my [public GPG key](/assets/public.asc) to encrypt email you send me if you like.
