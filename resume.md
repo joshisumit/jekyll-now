@@ -31,22 +31,22 @@ To work in an environment which provides more avenues in the fields of IT Infras
 Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org
 
 
-##Projects
-###1) Reconfigurable Cloud
+## Projects
+### 1) Reconfigurable Cloud
 
 *Linux, Shell Scripting, LXC, cgroup*
 
 Reconfigurable cloud aims at running Cloud and HPC applications on the same infrastructure in a way that preserves the consolidation capabilities of commodity clouds. It improves HPC application performance by running them in LXC (Linux Containers).Moreover it aims at optimal utilization of IT infrastructure.
 
 
-###2) Easy Wordpress
+### 2) Easy Wordpress
 
 *Linux, Shell Script*
 
 [Easy Wordpress](https://github.com/joshisumit/easy_wordpress) is a shell script that easily creates wordpress hosting environment. It rapidly installs wordpress on Ubuntu, by eliminating a lot of the up front setup.
 
 
-###3) Rapid HPC
+### 3) Rapid HPC
 
 *Linux, LXC, libvirt, Shell Script*
 
@@ -55,7 +55,7 @@ Reconfigurable cloud aims at running Cloud and HPC applications on the same infr
 
 
 
-##Work Experience
+## Work Experience
 
 ### Prorigo Software, September 2015 - Present
 
@@ -66,5 +66,5 @@ Designation - Networking QA Engineer
 Designation - Dissertation Intern
 
 
-##Presentations
+## Presentations
 [Reconfigurable Cloud](http://slides.com/sumitjoshi/deck-2/#/)
