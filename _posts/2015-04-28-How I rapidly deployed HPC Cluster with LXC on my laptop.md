@@ -10,13 +10,13 @@ I have written shell script, that will let you turn your laptop into a virtual t
 
 This script is useful for basic development and testing – if all you want is to test some HPC code than you can check it by running this script which rapidly deploys HPC Cluster.Virtual HPC cluster is deployed with Linux Container(LXC) and libvirt.
 
-##Prerequisites
+## Prerequisites
 In this tutorial, we will be using LXC for creating filesystem of container and libvirt API(virsh) for managing those containers.Before running a script install them with:
 
     apt-get install lxc
     apt-get install libvirt-bin
 
-##What we wiil do ?
+## What we wiil do ?
 
 We will be creating one master node and then 3 worker nodes to actually do the work.
 Everthing will be installed automatically by script.
@@ -37,7 +37,7 @@ Everthing will be installed automatically by script.
   - Hostname : compute3
   - IP : 192.168.122.154
 
-##So, How to set it up?
+## So, How to set it up?
 
 Download the script by running:
 
@@ -70,7 +70,7 @@ Once everything is settled up,run the script:
 Script will take some time to install master and compute node.
 
 
-##Verify your HPC Cluster Installation
+## Verify your HPC Cluster Installation
 
 
     virsh -c lxc:/// list
@@ -85,7 +85,7 @@ You will get following output:
     5199  compute-3                      running
  
  
-###Verify Master container  
+### Verify Master container  
 Login to your master node container with username 'ubuntu' and password 'ubuntu' :
 
     virsh -c lxc:/// console master
@@ -103,7 +103,7 @@ After logging in, Check following things in your master container:
 5. MPI (`mpich2`):MPI is installed, cluster will communicate with MPI.
 
 
-###Verify compute container 
+### Verify compute container 
 Login to your compute-1 node container with username 'ubuntu' and password 'ubuntu' :
 
     virsh -c lxc:/// console compute-1
@@ -115,6 +115,6 @@ After logging in, Check following things in your compute-1 container:
     mount -a
 3. `/etc/hosts` file
 
-##Summary
+## Summary
 
 If you are working with HPC, having a full blown HPC Cluster on your laptop is awesome :)
