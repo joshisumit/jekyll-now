@@ -32,6 +32,8 @@ Research (IJSETR), ISSN- 2278 – 7798 , www.ijsetr.org
 
 
 ## Projects
+----
+
 ### 1) Reconfigurable Cloud
 
 *Linux, Shell Scripting, LXC, cgroup*
@@ -56,6 +58,7 @@ Reconfigurable cloud aims at running Cloud and HPC applications on the same infr
 
 
 ## Work Experience
+---
 
 ### Prorigo Software, September 2015 - Present
 
