@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Easy Wordpress - Create wordpress environment with ease
+title: Easy Wordpress - Create wordpress hosting environment with ease
 ---
 
 [Easy Wordpress](https://github.com/joshisumit/easy_wordpress) is a shell script that easily sets up wordpress hosting environment on Ubuntu 12.04. 
 
 Easy Wordpress eliminates a lot of the up front setup:
+
+
 - You don't need to install/configure LEMP Stack(Linux,nginx,MySQL,PHP). :)
 - If you have already installed LEMP Stack, then it directly installs Wordpress on it.
 - In a few minutes you'll be set up with a minimal, wordpress environment.
