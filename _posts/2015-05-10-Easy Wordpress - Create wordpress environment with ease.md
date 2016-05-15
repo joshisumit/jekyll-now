@@ -1,8 +1,8 @@
 # Easy Wordpress
 
-**Easy Wordpress** easily creates wordpress hosting environment.
+** Easy Wordpress** easily creates wordpress hosting environment.
 
-**Easy Wordpress** is a shell script that rapidly installs wordpress on Ubuntu 12.04, by eliminating a lot of the up front setup.
+** Easy Wordpress** is a shell script that rapidly installs wordpress on Ubuntu 12.04, by eliminating a lot of the up front setup.
 
 - You don't need to install/configure LEMP Stack(Linux,nginx,MySQL,PHP). :)
 - If you have already installed LEMP Stack, then it directly installs Wordpress on it.
@@ -11,14 +11,14 @@
 
 
 
-##Pre-requisites
+## Pre-requisites
 
 1. This script requires non-root user account on your server with sudo privileges for its execution or it should be executed with root user.
 2. This script requires `sample_nginx_config` file for its execution.
 
 
 
-##How to Set it up ?
+## How to Set it up ?
 
     git clone https://github.com/joshisumit/easy_wordpress.git
     
@@ -52,7 +52,7 @@ List all tables of example_db (i.e. tables starting with wp_) :
      SELECT User FROM mysql.user;
 
 
-##Issues
+## Issues
 
 #### Issue 1)  `Your PHP installation appears to be missing the MySQL extension which is required by WordPress`
 
