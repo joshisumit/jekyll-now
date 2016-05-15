@@ -1,3 +1,9 @@
+---
+layout: post
+title: Easy Wordpress - Create wordpress environment with ease
+---
+
+
 # Easy Wordpress
 
 [Easy Wordpress](https://github.com/joshisumit/easy_wordpress) easily creates wordpress hosting environment.
