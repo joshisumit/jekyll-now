@@ -22,7 +22,7 @@ To work in an environment which provides more avenues in the fields of IT Infras
 ---
 
 - Linux: Redhat, Ubuntu
-- Virtualization: KVM, LXC, libvirt API
+- Virtualization: KVM, LXC,Docker libvirt API
 - Cloud: Openstack Havana
 - Scripting: Python,Shell
 - Courses: ITIL, Monitoring, Cyber Forensics, Security Audit, Parallel programming
@@ -66,7 +66,7 @@ Reconfigurable cloud aims at running Cloud and HPC applications on the same infr
 
 ### Prorigo Software, September 2015 - Present
 
-Designation - Networking QA Engineer
+Designation - Software Engineer
 
 ### C-DAC ACTS, Pune August 2014- May 2015
 
