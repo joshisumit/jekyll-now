@@ -64,7 +64,12 @@ Reconfigurable cloud aims at running Cloud and HPC applications on the same infr
 ## Work Experience
 ---
 
-### Prorigo Software, September 2015 - Present
+### Great Software Laboratory, November 2017 - Present
+
+Designation - Software Engineer
+
+
+### Prorigo Software, September 2015 - October 2017
 
 Designation - Software Engineer
 
